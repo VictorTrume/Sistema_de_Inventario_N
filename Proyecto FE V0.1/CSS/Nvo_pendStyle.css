@@ -1,0 +1,34 @@
+:root {
+    --color-menus: #222341; /* Azul marino para los menus y footer */
+    --color-cajasTxt: #7bafdd; /* Gris para las cajas de texto */
+    --color-inputs: #868788; /* Fondo claro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.containerLogin 
+{
+    background-color: var(--color-cajasTxt);
+    width: 30%;
+}
+.containerLogin h2{
+    height: 10px;
+}
+
+#container{background: rgb(255,255,255);
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
+    }
+    
+    article{
+        padding-top: 20px;
+        column-count: 3;
+        column-gap: 20px;
+        column-rule: dotted 4px #ccc;
+        
+    }

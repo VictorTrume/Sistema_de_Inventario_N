@@ -1,0 +1,108 @@
+:root {
+    --color-menus: #222341; /* Azul marino para los menus y footer */
+    --color-cajasTxt: #7bafdd; /* Gris para las cajas de texto */
+    --color-inputs: #868788; /* Fondo claro */
+    --color-boton: #3b8fd6; /* Azul del botón */
+    --color-boton-hover: #285f91; /* Azul más oscuro al pasar el mouse */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d3d3d3;;
+}
+
+.containerLogin {
+    background-color: var(--color-cajasTxt);
+    width: 100%; /* Aseguramos que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 600px; /* Limitar el tamaño máximo para pantallas grandes */
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.containerLogin h2 {
+    text-align: center;
+    color: var(--color-titulo);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-texto);
+    margin-bottom: 8px;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+.form-control:focus {
+    /* border-color: var(--color-boton); */
+    outline: none;
+}
+
+button[type="submit"] {
+    /* background-color: var(--color-boton); */
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* button[type="submit"]:hover {
+    background-color: var(--color-boton-hover);
+} */
+
+#preview {
+    max-width: 100%; /* Hacemos que la imagen ocupe el 100% del contenedor disponible */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-height: 200px; /* Aseguramos que la imagen no sea demasiado grande */
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .containerLogin {
+        width: 90%; /* En pantallas pequeñas, el formulario ocupa el 90% */
+        padding: 20px; /* Menos padding para dispositivos pequeños */
+    }
+
+    .containerLogin h2 {
+        font-size: 1.5rem; /* Ajustamos el tamaño del título */
+    }
+
+    .form-label {
+        font-size: 1rem; /* Hacemos más pequeño el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+

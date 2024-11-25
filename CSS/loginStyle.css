@@ -1,0 +1,48 @@
+:root {
+    --color-menus: #222341; /* Azul marino para los menus y footer */
+    --color-cajasTxt: #9fa0a3; /* Gris para las cajas de texto */
+    --color-inputs: #868788; /* Fondo claro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
+  .containerLogin {
+    background-color: var(--color-cajasTxt);
+    width: 50%;  /* Aumentar el ancho del contenedor en pantallas grandes */
+    margin: 0 auto;  /* Centrar el contenedor */
+}
+
+@media (max-width: 768px) {
+    .containerLogin {
+        width: 90%; /* El formulario ocupa el 90% del ancho en pantallas pequeñas */
+    }
+}
+
+.containerLogin h2{
+    height: 10px;
+}
+
+.user-icon {
+    width: 100px; /* Ajusta el tamaño según lo necesites */
+    height: 100px; /* Mantiene la relación de aspecto */
+    display: block;
+    margin: 20px auto;
+    margin-top: 70px; /* Centra la imagen */
+}
+footer {
+    padding: 20px;
+    background-color: var(--color-menus);
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
